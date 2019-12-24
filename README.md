@@ -8,7 +8,7 @@ Documentation about the internal structures of [Epsilon](https://github.com/numw
         <ul>
             <li> <a href="https://github.com/epsilon-doc/RamRom-Doc/tree/master/Shared">Ion</a> 
                 <ul>
-                    <li> <a href="https://github.com/epsilon-doc/RamRom-Doc/blob/master/Shared/Ion/PlatformInfo.md">PlatformInfo</a> </li>
+                    <li> <a href="https://github.com/epsilon-doc/RamRom-Doc/blob/master/Shared/Ion/PlatformInfo.md">PlatformInfo</a> : Contains informations about the operating system </li>
                 </ul>
             </li>
         </ul>
