@@ -14,6 +14,7 @@ Documentation about the internal structures of [Epsilon](https://github.com/numw
         </ul>
     </li>
 </ul>
+
 ## List of what has been documented
 
 - [PlatformInfo](PlatformInfo.md) : Contains informations about the operating system
