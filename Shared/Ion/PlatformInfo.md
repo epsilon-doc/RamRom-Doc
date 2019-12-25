@@ -1,15 +1,16 @@
 
 # PlatformInfo
-PlatformInfo is a class declared in [`ion/src/shared/platform_info.cpp`](https://github.com/numworks/epsilon/blob/master/ion/src/shared/platform_info.cpp) It is located in internal ROM, at fixed address `0x080001c4`. It contains information such as the version of epsilon and the address of the script store. It uses a magic number, `0xF00DC0DE` (big endian), called Magic.
 
-| Offset | Name             | Type     | Definition                              |
-|--------|------------------|----------|-----------------------------------------|
-|  0x00  | m_header         | uint32_t | Magic number, used to check integrity   |
-|  0x04  | m_version        | char[8]  | Version of epsilon, null-terminated     |
-|  0x0C  | m_patchLevel     | char[8]  | Commit ID of the build, null-terminated |
-|  0x14  | m_storageAddress | void*    | Address of the script-store             |
-|  0x18  | m_storageSize    | size_t   | Length of the script-store, in bytes    |
-|  0x1C  | m_footer         | uint32_t | Same as m_header                        |
+PlatformInfo is a class declared in [`ion/src/shared/platform_info.cpp`](https://github.com/numworks/epsilon/blob/master/ion/src/shared/platform_info.cpp). It is located in internal ROM, at fixed address `0x080001c4`. It contains information such as the version of epsilon and the address of the script store. It uses a magic number, `0xF00DC0DE` (big endian), called Magic.
+
+| Offset | Name             | Type     | Definition                                               |
+|--------|------------------|----------|----------------------------------------------------------|
+|  0x00  | m_header         | uint32_t | Magic number, used to check integrity                    |
+|  0x04  | m_version        | char[8]  | Version of epsilon, null-terminated                      |
+|  0x0C  | m_patchLevel     | char[8]  | Commit ID of the build, null-terminated                  |
+|  0x14  | m_storageAddress | void*    | Address of the [Storage](Shared/Ion/Storage.md)          |
+|  0x18  | m_storageSize    | size_t   | Length of the [Storage](Shared/Ion/Storage.md), in bytes |
+|  0x1C  | m_footer         | uint32_t | Same as m_header                                         |
 
 [Omega](https://github.com/Omega-Numworks/Omega) expands the PlatformInfo a bit. It uses a second magic number, `0xDEADBEEF` (big endian), called OmegaMagic.
 
