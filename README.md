@@ -3,9 +3,9 @@ Documentation about the internal structures of [Epsilon](https://github.com/numw
 
 ## List of what has been documented :
 
-- [Shared](Shared/)
-  - [Ion](Shared/Ion/)
-    - [PlatformInfo](Shared/Ion/PlatformInfo.md) : Contains informations about the operating system
-    - [Storage](Shared/Ion/Storage.md) : A basic filesystem, used to store scripts
-    - [Record](Shared/Ion/Storage.md#record) : One file in Storage
+- [Shared](/Shared/)
+  - [Ion](/Shared/Ion/)
+    - [PlatformInfo](/Shared/Ion/PlatformInfo.md) : Contains informations about the operating system
+    - [Storage](/Shared/Ion/Storage.md) : A basic filesystem, used to store scripts
+    - [Record](/Shared/Ion/Storage.md#record) : One file in Storage
 

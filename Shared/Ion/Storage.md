@@ -1,7 +1,7 @@
 
 # Storage
 
-Storage is a class declared in [`ion/src/shared/storage.cpp`](https://github.com/numworks/epsilon/blob/master/ion/src/shared/storage.cpp). It is located in RAM, its purpose is to store user scripts (and KhiCAS sessions on Delta/Omega). Its address and size can be retrieved from [PlatformInfo](Shared/Ion/PlatformInfo.md), at offset `0x14` and `0x18`.
+Storage is a class declared in [`ion/src/shared/storage.cpp`](https://github.com/numworks/epsilon/blob/master/ion/src/shared/storage.cpp). It is located in RAM, its purpose is to store user scripts (and KhiCAS sessions on Delta/Omega). Its address and size can be retrieved from [PlatformInfo](/Shared/Ion/PlatformInfo.md), at offset `0x14` and `0x18`.
 
 Storage is basically a big buffer, containing some [Records](#record). It uses a magic number, `0xBADD0BEE` (big endian), called Magic.
 
