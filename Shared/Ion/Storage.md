@@ -21,4 +21,4 @@ Record is a class declared in [`ion/src/shared/storage.cpp`](https://github.com/
 |  0x02 + ? | m_data | uint32_t | Content, null-terminated            |
 
 m_size is the size of m_name + the size of m_data.
-
+Note: The way that epsilon handle's Records is that the size is used to loop trough records. The reading of the data happens with standards string fuctions, since everything is null-terminated.
