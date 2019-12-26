@@ -20,6 +20,6 @@ Record is a class declared in [`ion/src/shared/storage.cpp`](https://github.com/
 |  0x02     | m_name | char[?]  | Name of the record, null-terminated |
 |  0x02 + ? | m_data | char[??] | Content, null-terminated            |
 
-m_size is the size of m_name + the size of m_data.
+m_size is the size of m_name + the size of m_data + 2 (includes its own size).
 
 Note: The way epsilon handles Records is that the size is used to loop trough records. The reading of the data happens with standards string fuctions, since everything is null-terminated.
