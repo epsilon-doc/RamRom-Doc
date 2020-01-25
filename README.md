@@ -9,4 +9,4 @@ Documentation about the internal structures of [Epsilon](https://github.com/numw
     - [Storage](/Shared/Ion/Storage.md) : A basic filesystem, used to store scripts
     - [Record](/Shared/Ion/Storage.md#record) : One file in Storage
 - [Code](/Code/)
-  - [Script](Script.md) : Stores a python script
+  - [Script](/Code/Script.md) : Stores a python script
